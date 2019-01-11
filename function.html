@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>javascript</title>
+    </head>
+    <body>
+        <p id="text">Hello World</p>
+        <button id="myButton">Change text</button>
+        <button id="changeBack">change Back</button>
+        <p id="text2">Javascript is ...</p>
+        <p id="text3"><p>
+        <button id="myButton2">click here!</button>
+        <button id="changeBack2">change Back</button>
+        <button id="magic">magic text</button>
+        <button id = "magic_color">changeColor</button>
+        <button id = "remove">remove</button>
+        <script type="text/javascript">
+
+            document.getElementById("myButton").onclick = function() {
+                document.getElementById("text").innerHTML = "CHANGED"
+            }
+
+            document.getElementById("changeBack").onclick = function() {
+                document.getElementById("text2").innerHTML = "Hello World"
+
+            }
+
+            document.getElementById("myButton2").onclick = function() {
+                document.getElementById("text2").innerHTML += "awsome";
+            }
+
+            document.getElementById("magic").onclick = function() {
+                document.getElementById("text3").innerHTML = "This is a magic text";
+            }
+
+            document.getElementById("changeBack2").onclick = function() {
+                document.getElementById("text2").innerHTML += "It is super as well"
+            }
+
+            document.getElementById("magic_color").onclick = function(){
+            	document.getElementById("text3").style.color = "red";
+            }
+
+            document.getElementById("remove").onclick = function(){
+            	document.getElementById("text3").style.display = "none";
+            }
+        </script>
+    </body>
+</html>
